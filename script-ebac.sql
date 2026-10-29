@@ -4,16 +4,15 @@ ORDER BY Name ASC;
 
 -- Liste todas as músicas com duração maior que 5 minutos.
 SELECT * FROM Track 
-WHERE Milliseconds > 500000;
+WHERE Milliseconds > 300000;
 
 --Selecione todas as músicas do gênero Rock.
 SELECT * FROM Genre
 WHERE Name like 'Rock%'
--- GenreId Rock = 1 e GenreId Rock And Roll = 5
+-- GenreId Rock = 1
 
 SELECT * FROM Track
-WHERE GenreId = 1
-OR GenreId = 5
+WHERE GenreId = 1;
 
 --Liste os álbuns junto com o nome do artista correspondente.
 SELECT 
@@ -58,7 +57,7 @@ SELECT
 
 -- Selecione todas as músicas que possuem a palavra “Love” no nome. 
 SELECT * FROM Track 
-WHERE Name like '%love%'
+WHERE Name like '%love%';
 	
 	
 	
